@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Wireframe</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#ffffff;
+    padding:20px;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    border:2px solid black;
+}
+
+header{
+    border-bottom:2px solid black;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    border-bottom:2px solid black;
+    padding:15px;
+    text-align:center;
+}
+
+nav span{
+    margin:0 10px;
+}
+
+main{
+    padding:20px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    border:2px solid black;
+    height:150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+footer{
+    border-top:2px solid black;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<header>
+    <h1>STUDENTHUB PORTAL</h1>
+    <p>Student Dashboard</p>
+</header>
+
+<nav>
+    <span>Home</span> |
+    <span>About</span> |
+    <span>Register</span> |
+    <span>Login</span> |
+    <span>Dashboard</span> |
+    <span>Events</span> |
+    <span>Profile</span> |
+    <span>Contact</span> |
+    <span>Admin</span> |
+    <span>FAQ</span>
+</nav>
+
+<main>
+
+<h2>Welcome, Student</h2>
+
+<div class="cards">
+
+<div class="card">
+    Attendance
+</div>
+
+<div class="card">
+    Assignments
+</div>
+
+<div class="card">
+    Results
+</div>
+
+<div class="card">
+    Notices
+</div>
+
+<div class="card">
+    Events
+</div>
+
+<div class="card">
+    Profile
+</div>
+
+</div>
+
+</main>
+
+<footer>
+    © 2026 StudentHub Portal
+</footer>
+
+</div>
+
+</body>
+</html>
