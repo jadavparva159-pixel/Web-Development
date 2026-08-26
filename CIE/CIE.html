@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f9f7f7;
+        }
+
+        header, footer {
+            background: #7ddde4;
+            color: rgb(254, 254, 254);
+            text-align: center;
+            padding: 20px;
+        }
+
+          nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav a {
+            color: rgb(10, 10, 10);
+            text-decoration: none;
+        }
+
+        nav hover{
+            color:rgb(239, 235, 235)
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h2 { text-align: center; color: #284243; }
+
+        .events {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card, form, .faq {
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px #ccc;
+        }
+
+        .card { width: 220px; }
+
+        button, .btn {
+            background: #7ddde4;
+            color: white;
+            padding: 10px 15px;
+            border: 0;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px;
+        }
+
+        .faq { margin: 10px 0; }
+
+        @media(max-width:600px) {
+            .events { flex-direction: column; }
+            .card { width: 100%; }
+        }
+</style>
+<body>
+    <header id="home">
+    <h1>CHARUSAT</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#register">Registration</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="events">
+    <h2>Upcoming Events</h2>
+
+    <div class="events">
+        <div class="card">
+            <h3>Technical Seminar</h3>
+            <p>Date: 10 Sept 2026</p>
+            <p>Venue: Seminar Hall</p>
+            <a class="btn" href="#register">Register</a>
+        </div>
+
+        <div class="card">
+            
+            <h3>Hackathon</h3>
+            <p>Date: 18 Sept 2026</p>
+            <p>Venue: Computer Lab</p>
+            <a class="btn" href="#register">Register</a>
+        </div>
+
+        <div class="card">
+            <h3>Web Workshop</h3>
+            <p>Date: 25 Sept 2026</p>
+            <p>Venue: IT Lab</p>
+            <a class="btn" href="#register">Register</a>
+        </div>
+
+        <div class="card">
+            <h3>Project Exhibition</h3>
+            <p>Date: 30 Sept 2026</p>
+            <p>Venue: Auditorium</p>
+            <a class="btn" href="#register">Register</a>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="register">
+    <h2>Event Registration</h2>
+
+    <form>
+        <label>Name</label>
+        <input type="text" required>
+
+        <label>Student ID</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Mobile</label>
+        <input type="tel" pattern="[0-9]{10}" required>
+
+        <label>Event</label>
+        <select required>
+            <option value="">Select Event</option>
+             <option>Technical Seminar</option>
+             <option>Hackathon</option>
+            <option>Web Workshop</option>
+            <option>Project Exhibition</option>
+        </select>
+
+        <p>Gender:
+             <input type="radio" name="g"> Male
+             <input type="radio" name="g"> Female
+             <input type="radio" name="g"> Other
+        </p>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </form>
+</section>
+
+<section id="faq">
+    <h2>FAQ</h2>
+
+    <div class="faq">
+        <b>How can I register?</b>
+        <p>Fill the registration form and click Register.</p>
+    </div>
+
+    <div class="faq">
+        <b>Is registration free?</b>
+        <p>Yes, for CHARUSAT students.</p>
+    </div>
+
+    <div class="faq">
+        <b>Can I join multiple events?</b>
+        <p>Yes, if timings do not overlap.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align:center;">
+        Email: events@charusat.ac.in | Phone: +91 2697 265011
+    </p>
+</section>
+
+<footer>
+    © 2026 CHARUSAT Student Events
+</footer>
+
+
+
+</body>
+</html>
